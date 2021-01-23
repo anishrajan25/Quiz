@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Assignment</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-light">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-dark">
+                    <h2 class="text-center text-white" id="header">Quiz</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mx-5 mt-4 mb-n5">
+                    <h3 id="answerKeyHeading">Answer key</h3>
+                </div>
+            </div>
+            <div class="container jumbotron bg-white m-5 py-4" id="quiz">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h4 id="statement">A complete graph can have</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 ml-2">
+                        <input type="radio" name="option" class="my-2" id="opt1" /> <label for="opt1"></label><br />
+                        <input type="radio" name="option" class="my-2" id="opt2" /> <label for="opt2"></label><br />
+                        <input type="radio" name="option" class="my-2" id="opt3" /> <label for="opt3"></label><br />
+                        <input type="radio" name="option" class="my-2" id="opt4" /> <label for="opt4"></label><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-3 my-2">
+                        <div class="alert alert-success" id="correct">
+                            <strong>Correct</strong>
+                        </div>
+                        <div class="alert alert-danger" id="incorrect">
+                            <strong>Incorrect</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-warning" id="submit">Submit</button>
+                        <button class="btn btn-success" id="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container jumbotron bg-white m-5 py-4" id="answerkey">
+                
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-3 my-2 mx-5">
+                    <button class="btn btn-primary" id="restart">Restart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
